@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="dashboard-header">
+        <div class="logo">
+            <img src="images/logo_1.crop.jpeg" alt="Travel Planner Logo" />
+            <h1>Travel Planner</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Log Out</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="profile-main">
+        <section class="profile-card">
+            <img src="images/cyber-truck-1.jpg" alt="Cyber Truck" class="profile-picture">
+            <h2>Elon Musk</h2>
+            <p>Adventurer | Travel Enthusiast</p>
+        </section>
+
+        <section class="profile-form">
+            <h2>Update Profile</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="Elon Musk" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="elon.musk@tesla.com" required>
+
+                <label for="preferences">Travel Preferences:</label>
+                <textarea id="preferences" name="preferences" rows="4"
+                    placeholder="Enter your preferences (e.g., beach destinations, hiking trips)"></textarea>
+
+                <label for="budget">Travel Budget:</label>
+                <input type="number" id="budget" name="budget" placeholder="Enter your budget in USD">
+
+                <button type="submit" class="save-button">Save Changes</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="dashboard-footer">
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p>&copy; 2024 Travel Planner. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

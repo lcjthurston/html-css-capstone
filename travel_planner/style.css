@@ -1,41 +1,10 @@
-/* Header Section 1 Styling */
-/* header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+/* 
+ **********************************
+ ******* Dashboard Styling ********
+ **********************************
+ */
 
-.left {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-body header img {
-    width: auto;
-    height: 30px;
-    margin-top: 0;
-}
-
-h1 {
-    text-align: center;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 5px;
-}
-
-.right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.right a {
-    margin-left: 10px;
-    margin-right: 10px;
-} */
-
-/* Header Section Styling */
+/* 1. Header Section */
 .dashboard-header {
     display: flex;
     justify-content: space-between;
@@ -79,7 +48,7 @@ h1 {
 }
 
 
-/* Main Section Styling */
+/* 2. Main Section */
 .dashboard-main .welcome-section h2 {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -171,7 +140,7 @@ h1 {
 }
 
 
-/* Footer Section Styling */
+/* 3. Footer Section */
 .dashboard-footer {
     background-color: #333;
     color: #fff;
@@ -200,4 +169,114 @@ h1 {
     font-size: 0.9rem;
     margin: 0;
     color: #ccc;
+}
+
+/* 
+ **********************************
+ ****** User Profile Styling ******
+ **********************************
+ */
+
+/* General Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.profile-header,
+.profile-footer {
+    background-color: #ff7f50;
+    color: #fff;
+}
+
+.profile-main {
+    height: 100vh;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 300px;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.profile-card p {
+    color: #777;
+    font-size: 1rem;
+}
+
+/* Profile Form */
+.profile-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 2 1 500px;
+}
+
+.profile-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.profile-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.profile-form input,
+.profile-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.profile-form .save-button {
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-form .save-button:hover {
+    background-color: #ff6347;
+}
+
+/* Responsive Design via Media Queries */
+@media (max-width: 768px) {
+    .profile-main {
+        flex-direction: column;
+    }
 }
