@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="dashboard-header">
+        <div class="logo">
+            <h1>Travel Planner</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="#">Log Out</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="settings-main">
+        <section class="settings-section">
+            <h2>Settings</h2>
+
+            <div class="setting-item">
+                <label for="dark-mode-toggle">Enable Dark Mode:</label>
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <label for="email-notifications">Email Notifications:</label>
+                <label class="switch">
+                    <input type="checkbox" id="email-notifications" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <label for="preferred-languages">Preferred Language:</label>
+                <select id="preferred-languages">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="german">German</option>
+                </select>
+            </div>
+
+            <div class="setting-item">
+                <label for="privacy-mode">Enable Privacy Mode:</label>
+                <label class="switch">
+                    <input type="checkbox" id="privacy-mode">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <button class="save-button">Save Changes</button>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="dashboard-footer">
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p>&copy; 2024 Travel Planner. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

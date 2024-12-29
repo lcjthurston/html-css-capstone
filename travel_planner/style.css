@@ -280,3 +280,124 @@ body {
         flex-direction: column;
     }
 }
+
+
+/* 
+ **********************************
+ ****** Settings Styling ******
+ **********************************
+ */
+
+/* General Layout */
+/* body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header,
+footer {
+    background-color: #ff7f50;
+    color: #fff;
+} */
+
+.settings-main {
+    height: 100vh;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+} */
+
+/* Settings Section */
+.settings-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.settings-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.setting-item label {
+    font-size: 1rem;
+}
+
+.setting-item select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Toggle Switch Styling */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ddd;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #ff7f50;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+/* Save Button */
+.save-button {
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.save-button:hover {
+    background-color: #ff6347;
+}
