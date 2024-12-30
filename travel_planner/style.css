@@ -295,17 +295,105 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .profile-card h2 {
     font-size: 1.5rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .profile-card p {
     color: #777;
     font-size: 1rem;
+}
+
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.modal label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.modal input[type="file"] {
+    margin-bottom: 15px;
+}
+
+#preview-container {
+    margin: 10px 0;
+    text-align: center;
+    border: 1px dashed #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    color: #555;
+}
+
+#preview-container img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.save-button {
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #ff6347;
+}
+
+/* Show Modal */
+.modal.show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Close Button */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
 }
 
 /* Profile Form */

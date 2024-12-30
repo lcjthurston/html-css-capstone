@@ -1,3 +1,9 @@
+/* 
+ **********************************
+ ******** DASHBOARD MODAL *********
+ **********************************
+ */
+
 // Modal Elements
 const modal = document.getElementById('tripModal');
 const openModalButton = document.querySelector('.open-modal');

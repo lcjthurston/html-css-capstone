@@ -29,7 +29,24 @@
             <img src="images/cyber-truck-1.jpg" alt="Cyber Truck" class="profile-picture">
             <h2>Elon Musk</h2>
             <p>Adventurer | Travel Enthusiast</p>
+            <button class="open-modal profile-pic-button">Change Profile Picture</button>
         </section>
+
+        <!-- Change Profile Picture Modal -->
+        <div class="modal" id="profileModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Update Profile Picture</h2>
+                <form id="profilePicForm">
+                    <label for="profile-pic-input">Upload New Picture:</label>
+                    <input type="file" id="profile-pic-input" accept="image/*" required>
+                    <div id="preview-container">
+                        <p>No image selected</p>
+                    </div>
+                    <button type="submit" class="save-button">Save Picture</button>
+                </form>
+            </div>
+        </div>
 
         <section class="profile-form">
             <h2>Update Profile</h2>
@@ -62,6 +79,7 @@
         <p>&copy; 2024 Travel Planner. All rights reserved.</p>
     </footer>
 
+    <script src="profile.js"></script>
 </body>
 
 </html>
