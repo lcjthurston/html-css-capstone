@@ -13,6 +13,12 @@ body {
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* 2. Fun Animations */
 .cta-button,
 .save-button {
@@ -29,11 +35,11 @@ body {
 .cta-button:hover,
 .save-button:hover {
     background-color: #ff6347;
-    transform: scale(1.1);
     /* Slight zoom */
+    transform: scale(1.1);
 }
 
-/* 3. Bouncing Header */
+/* 3. Rotating Logo */
 .logo a {
     display: inline-block;
 }
@@ -68,7 +74,7 @@ body {
  **********************************
  */
 
-/* 1. Header Section */
+/* 1. Dashboard Header */
 .dashboard-header {
     display: flex;
     justify-content: space-between;
@@ -80,15 +86,10 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* a. Logo Styling */
 .logo {
     display: flex;
     align-items: center;
-}
-
-.logo a img {
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 5px;
 }
 
 .logo a {
@@ -96,7 +97,7 @@ body {
     display: flex;
 }
 
-.logo img {
+.logo a img {
     height: 40px;
     margin-right: 10px;
     border-radius: 5px;
@@ -107,19 +108,12 @@ body {
     margin: 0;
 }
 
+/* b. Navigation Links Styling */
 .nav-links {
     display: flex;
     gap: 20px;
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-/* Navigation Links Styling */
 .nav-links a {
     color: #fff;
     text-decoration: none;
@@ -133,7 +127,7 @@ body {
     font-weight: 700;
 }
 
-/* Underline Slide-In Effect */
+/* b.i Underline Slide-In Effect */
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -149,28 +143,23 @@ body {
     width: 100%;
 }
 
-
-
-/* 2. Main Section */
-.dashboard-main .welcome-section h2 {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
+/* 2. Dashboard Main */
 .dashboard-main {
+    flex: 1;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
 }
 
+/* 2.1 Welcome Section */
 .welcome-section {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.welcome-section h1 {
-    font-size: 2rem;
-    color: #333;
+.welcome-section h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .welcome-section p {
@@ -270,7 +259,7 @@ body {
     cursor: pointer;
 }
 
-
+/* 2.2 Trips Section */
 .trips-section {
     margin-top: 40px;
 }
@@ -284,8 +273,8 @@ body {
 
 .trips-grid {
     display: grid;
-    grid-template-rows: repeat(2, auto);
     /* Two rows with automatic height */
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
@@ -324,7 +313,7 @@ body {
 }
 
 
-/* 3. Footer Section */
+/* 3. Dashboard Footer */
 .dashboard-footer {
     background-color: #333;
     color: #fff;
@@ -361,30 +350,21 @@ body {
  **********************************
  */
 
-/* General Layout */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-.profile-header,
-.profile-footer {
-    background-color: #ff7f50;
-    color: #fff;
-}
-
+/* 1. Profile Main */
 .profile-main {
-    height: 100vh;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    /* Flexbox Properties */
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 1;
+
+    /* Spacing Properties */
+    height: 100vh;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    gap: 20px; 
 }
 
 /* Profile Card */
@@ -523,13 +503,19 @@ body {
 
 .profile-form input,
 .profile-form textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
 }
+
+
+.profile-form form input {
+    display: flex;
+} 
+
 
 .profile-form .save-button {
     background-color: #ff7f50;
@@ -559,30 +545,13 @@ body {
  ****** Settings Styling ******
  **********************************
  */
-
-/* General Layout */
-/* body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-header,
-footer {
-    background-color: #ff7f50;
-    color: #fff;
-} */
-
 .settings-main {
     height: 100vh;
+    flex: 1;
     padding: 20px;
-    max-width: 800px;
+    /* max-width: 1600px; */
     margin: 0 auto;
 }
-
-*/
 
 /* Settings Section */
 .settings-section {
