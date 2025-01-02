@@ -39,8 +39,6 @@ body {
 }
 
 .logo-image {
-    width: 50px;
-    height: auto;
     transition: transform 0.3s ease;
 }
 
@@ -62,7 +60,6 @@ body {
         opacity: 1;
     }
 }
-
 
 
 /* 
